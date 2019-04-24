@@ -8,8 +8,8 @@
         "radio": "*"
     },
     "files": [  
-        "README.md",
-        "pxt-cozir.ts"
+        "pxt-cozir.ts",
+        "README.md"
     ],
     "public": true
 }
