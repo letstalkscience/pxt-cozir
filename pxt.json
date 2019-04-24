@@ -6,9 +6,10 @@
     "dependencies": {
         "core": "*",
         "radio": "*"
-},
+    },
     "files": [  
         "cozir.ts",
+        "main.ts",
         "README.md"
     ],
     "public": true
