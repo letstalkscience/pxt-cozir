@@ -1,10 +1,8 @@
 /**
- * makecode COZIR LTS package.
+ * makecode lts cozir sensor package
  * Let's Talk Science - Living Space Action Project
- * https://www.letstalkscience.ca
- * Author: Simon Monk
- * https://www.monkmoakes.com
- * Co-Author: Jennifer Ferguson
+ * Author: Simon Monk @ Monk Makes
+ * Co-Author: Jennifer Ferguson @ Lets Talk Science
  * Date: 05-2018
  */
 
