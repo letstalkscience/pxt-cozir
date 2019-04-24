@@ -1,5 +1,5 @@
 {
-    "name": "Lets Talk Science!",
+    "name": "pxt-cozir",
     "version": "1.0.0",
     "dependencies": {
         "core": "*",
