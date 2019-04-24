@@ -1,13 +1,11 @@
 {
-    "name": "pxt-cozir",
+    "name": "Let's Talk Science - COZIR",
     "version": "1.0.0",
     "description": "",
     "dependencies": {
-        "core": "*",
-        "radio": "*"
+        "core": "*"
     },
     "files": [      
-        "main.ts",
         "cozir.ts",
         "README.md",
     ],
