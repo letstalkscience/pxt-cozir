@@ -2,10 +2,12 @@
     "name": "Lets Talk Science!",
     "version": "1.0.0",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        “radio”: “*”
     },
     "files": [  
-        "pxt-cozir.ts",
+        "cozir.ts",
+        “test.ts”,
         "README.md"
     ],
     "public": true
