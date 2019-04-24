@@ -7,6 +7,7 @@
     },
     "files": [  
         "pxt-cozir.ts",
+        “pxt-main.ts”,
         "README.md"
     ],
     "public": true,
