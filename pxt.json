@@ -8,8 +8,8 @@
         "radio": "*"
     },
     "files": [  
-        "README.md"
-        "cozir.ts",
+        "README.md",
+        "cozir.ts"
     ],
     "public": true
 }
