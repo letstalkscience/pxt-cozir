@@ -8,9 +8,8 @@
         "radio": "*"
     },
     "files": [  
-        "cozir.ts",
-        "main.ts",
         "README.md"
+        "cozir.ts",
     ],
     "public": true
 }
