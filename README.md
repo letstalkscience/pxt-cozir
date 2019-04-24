@@ -1,4 +1,4 @@
-# pxt-cozir
+# pxt-cozir-test
 # COZIR sensor by Let's Talk Science
 This library provides category blocks to collect data from the custom MonkMakes GSS COZIR printed circuit board sensor.
 ## Supported targets
