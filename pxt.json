@@ -9,9 +9,6 @@
     "files": [
         "README.md"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
     "public": true,
     "extension": {
         "namespace": "COZIR",
