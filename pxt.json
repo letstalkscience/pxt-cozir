@@ -10,9 +10,5 @@
         "README.md",
         "cozir.ts"
     ],
-    "public": true,
-    "extension": {
-        "namespace": "COZIR",
-        "label": "Let's Talk Science!",
-    }
+    "public": true
 }
