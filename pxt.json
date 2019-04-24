@@ -3,7 +3,6 @@
     "version": "1.0.0",
     "files": [  
         "cozir.ts",
-        “main.ts”,
         "README.md"
     ],
     "public": true,
