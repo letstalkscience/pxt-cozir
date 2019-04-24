@@ -1,11 +1,8 @@
 {
     "name": "Lets Talk Science!",
     "version": "1.0.0",
-    "description": "Custom blocks to collect data from your Let's Talk Science COZIR sensor array.",
-    "license": "MIT",
     "dependencies": {
-        "core": "*",
-        "radio": "*"
+        "core": "*"
     },
     "files": [  
         "pxt-cozir.ts",
