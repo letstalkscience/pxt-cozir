@@ -1,5 +1,5 @@
 {
-    "name": "cozir",
+    "name": "pxt-cozir",
     "version": "1.0.0",
     "dependencies": {
         "core": "*",
@@ -7,7 +7,6 @@
     },
     "files": [  
         "pxt-cozir.ts",
-        “test.ts”,
         "README.md"
     ],
     "public": true,
