@@ -1,7 +1,7 @@
 {
-    "name": "Let's Talk Science - COZIR",
+    "name": "Let's Talk Science! - COZIR",
     "version": "1.0.0",
-    "description": "",
+    "description": "Custom blocks to collect Co2, Temperature and Relative Humidity data from your Let's Talk Science COZIR sensor array.",
     "dependencies": {
         "core": "*"
     },
