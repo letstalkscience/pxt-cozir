@@ -1,0 +1,20 @@
+{
+    "name": "cozir",
+    "version": "0.0.1",
+    "description": "makecode lts cozir sensor package",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "extension": {
+        "namespace": "COZIR",
+        "label": "Let's Talk Science!",
+    }
+}
