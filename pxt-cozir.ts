@@ -1,10 +1,9 @@
 /**
  * makecode COZIR LTS package.
  * Let's Talk Science - Living Space Action Project
- * Simon Monk @ https://www.monkmakes.com
- * Jennifer Ferguson @ https://www.letstalkscience.ca
+ * Simon Monk @ Monk Makes
+ * Jennifer Ferguson @ Let’s Talk Science
  * Date: 05-2018
- * https://github.com/letstalkscience/pxt-cozir
  */
 
 
