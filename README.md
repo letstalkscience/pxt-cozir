@@ -18,5 +18,6 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 
 ## Calibrate COZIR with Altitude in SetUp
-Link: https://makecode.microbit.org/_0AxRHuahWRJd
+English Link: https://makecode.microbit.org/_0AxRHuahWRJd 
 
+French Link: https://makecode.microbit.org/_FCW38vX0c9p4 
