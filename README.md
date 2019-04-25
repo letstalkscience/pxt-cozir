@@ -18,5 +18,5 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 
 ## Calibrate COZIR
-Link: https://makecode.microbit.org/_Lbsfv70zEEua
+Link: https://makecode.microbit.org/_F99CRecf1epJ
 
