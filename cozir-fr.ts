@@ -39,7 +39,7 @@ namespace COZIR {
     })
 
     /**
-    * Return the CO2 concentration in parts per million (ppm)
+    * Fournit la concentration de CO2 en parties par million (ppm)
     */
     //% blockId=device_co2_toggle block="CO2 (PPM)"
     export function Co2(): number {
@@ -49,7 +49,7 @@ namespace COZIR {
     }
 
     /**
-    * Return the temperature in degrees Centigrade
+    * Fournit la température en degrés Celsius
     */
     //% blockId=device_temperature_toggle block="Température (°C)"
     export function temperature(): number {
@@ -59,7 +59,7 @@ namespace COZIR {
     }
 
     /**
-    * Return the relative humidty as a percentage
+    * Fournit l'humidité relative en pourcentage (%)
     */
     //% blockId=device_relativeHumidity_toggle block="Humidité relative (HR)"
     export function relativeHumidity(): number {
@@ -69,8 +69,8 @@ namespace COZIR {
     }
 
     /**
-    * Run this block when in fresh air and the module will re-calibrate it
-    * assuming that the CO2 level is 400ppm
+    * Exécutez cette fonction en plein-air et le module s'étalonnera lui-même
+    * En considérant un niveau de CO2 de 400ppm
     */
     //% blockId=device_calibrateCo2_toggle block="Calibration CO2"
     //% advanced=true
@@ -79,8 +79,8 @@ namespace COZIR {
     }
 
     /**
-    * Compensate for altitude. Specify altitude in metres
-    * @param metres altitude in metres
+    * Compensation pour l'altitude, spécifiez votre altitude en mètres.
+    * @param meters altitude en mètres
     */
     //% blockId=device_setAltitude_toggle block="Définir altitude"
     //% advanced=true
@@ -93,8 +93,8 @@ namespace COZIR {
     }
 
     /**
-    * Setup the COZIR module -only used during manufacturing
-    * this sets the mode of the COZIR to 'request'
+    * Paramétrer le module COZIR - utilisé seulement en usine
+    * ceci établit le mode "requête" du COZIR
     */
     //% blockId=device_setupCozir_toggle block="Initialisation COZIR"
     //% advanced=true
