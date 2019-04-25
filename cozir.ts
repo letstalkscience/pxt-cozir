@@ -82,10 +82,13 @@ namespace COZIR {
     * Compensate for altitude. Specify altitude in metres
     * @param metres altitude in metres
     */
-    //% blockId=device_setAltitude_toggle block="Set Altitude"
-    //% advanced=true
+    //% block
     export function setAltitude(metres: number): void {
-        altitude = metres
+        let param = 8192 + metres
+        let message = "S " + param + "\r\n"
+        //basic.showString(message)
+        serial.writeString(message)
+        basic.pause(300)
     }
 
     /**
