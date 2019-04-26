@@ -1,0 +1,9 @@
+﻿{
+  "COZIR.Co2|block": "CO2 (PPM)",
+  "COZIR.calibrateCo2|block": "Calibration CO2",
+  "COZIR.relativeHumidity|block": "Humidité relative (HR)",
+  "COZIR.setupCozir|block": "Initialisation COZIR",
+  "COZIR.temperature|block": "Température (°C)",
+  "COZIR|block": "Parlons sciences!",
+  "{id:category}COZIR": "COZIR"
+}
