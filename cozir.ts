@@ -82,9 +82,9 @@ namespace COZIR {
     * Compensate for altitude. Specify altitude in metres
     * @param metres altitude in metres
     */
-    //% block="Set Altitude"
+    //% block
     //% advanced=true
-    export function setAltitude(metres: number): void {
+    export function Altitude(metres: number): void {
         let param = 8192 + metres
         let message = "S " + param + "\r\n"
         //basic.showString(message)
