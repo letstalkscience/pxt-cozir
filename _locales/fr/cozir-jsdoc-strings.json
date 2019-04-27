@@ -5,6 +5,6 @@
   "COZIR.relativeHumidity": "Fournit l'humidité relative en pourcentage",
   "COZIR.Altitude": "Compensation pour l'altitude, spécifiez votre altitude en mètres.",
   "COZIR.Altitude|param|metres": "altitude en mètres",
-  "COZIR.setupCozir": "Paramétrer le module COZIR - utilisé seulement en usine\nceci établit le mode 'requête' du COZIR",
+  "COZIR.setupCozir": "Paramétrer l module COZIR - utilisé seulement en usine\nceci établit le mode 'requête' du COZIR",
   "COZIR.temperature": "Fournit la température en degrés Celsius"
 }
