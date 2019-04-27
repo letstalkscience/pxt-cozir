@@ -3,6 +3,7 @@
  * Let's Talk Science - Living Space Action Project
  * Author: Simon Monk @ Monk Makes
  * Co-Author: Jennifer Ferguson @ Lets Talk Science
+ * Translation: Mylene Gamache-Tremblay @ Parlons sciences
  * Date: 05-2018
  */
 
