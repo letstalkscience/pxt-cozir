@@ -1,4 +1,4 @@
-{
+﻿{
   "COZIR": "makecode lts cozir sensor package\nLet's Talk Science - Living Space Action Project\nAuthor: Simon Monk @ Monk Makes\nCo-Author: Jennifer Ferguson @ Lets Talk Science\nDate: 05-2018\n\nLet's Talk Science! COZIR block",
   "COZIR.Co2": "Fournit la concentration de CO2 en parties par million (ppm)",
   "COZIR.calibrateCo2": "Exécutez cette fonction en plein-air et le module s'étalonnera lui-même\nEn considérant un niveau de CO2 de 400ppm",
