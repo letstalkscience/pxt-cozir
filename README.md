@@ -11,7 +11,7 @@ You will then need to connect your CozIR sensor to the microbit as shown below
 
 Then flash the following program onto your micro:bit by [clicking this link](https://makecode.microbit.org/_2v5HM0fmjEJE) to open the blocks editor and then click on Download (bottom of the web page) and copy the hex file onto your micro:bit.
 
-![image-2](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-cozir-simple.png "COZIR Simple Program")<!-- .element height="50%" width="50%" -->
+<a href="https://makecode.microbit.org/_2v5HM0fmjEJE"><img src="https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-cozir-simple.png" height="50%" width="50%" title="COZIR Simple Program" alt="image-2"></a>
 
 Once the program is uploaded, pressing Button A will display the CO2 level in parts per million of CO2. Pressing button B will display the temperature in degrees C and both buttons together will show the relative humidity.
 
