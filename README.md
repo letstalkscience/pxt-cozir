@@ -21,13 +21,13 @@ You will then need to connect your CozIR sensor to the microbit as shown below.
 Then flash the following program onto your micro:bit by clicking the image to open the blocks editor and then click on Download *(bottom of the web page)* and copy the hex file onto your micro:bit.
 
 <!-- COZIR MakeCode Simple Program-->
-<a href="https://makecode.microbit.org/_1HecszR3XJ4w" target="_blank"><img src="https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-cozir-simple-1.png" title="COZIR Simple Program" alt="image-2"></a><!-- .element width="80%"-->
+<a href="https://makecode.microbit.org/_K4qcJHTprTiX" target="_blank"><img src="https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-cozir-simple-1.png" title="COZIR Simple Program" alt="image-2"></a><!-- .element width="80%"-->
 
 <!-- COZIR MakeCode Simple Program - Embed Blocks-->
 ```blocks
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(Math.round(COZIR.temperature()))
-    basic.showString(" C")
+    basic.showNumber(Math.round(COZIR.Co2()))
+    basic.showString(" PPM")
 })
 input.onButtonPressed(Button.B, function () {
     basic.showNumber(Math.round(COZIR.temperature()))
@@ -63,7 +63,7 @@ You can also force calibration using the Calibrate CO2 block in the Let's Talk S
 Wire-up the board to your micro:bit as shown previously. Then flash the following program onto your micro:bit by clicking the image to open the blocks editor and then click on Download *(bottom of the web page)* and copy the hex file onto your micro:bit.
 
 <!-- COZIR Sample Calibration Program-->
-<a href="https://makecode.microbit.org/_a5PE3a7hDUXM" target="_blank"><img src="https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-cozir-calibrate-2.png" title="COZIR Calibrate Program" alt="image-3"></a><!-- .element width="80%"-->
+<a href="https://makecode.microbit.org/_VA7WWK7PqDV0" target="_blank"><img src="https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-cozir-calibrate-2.png" title="COZIR Calibrate Program" alt="image-3"></a><!-- .element width="80%"-->
 
 <!-- COZIR Sample Calibration Program - Embed Blocks-->
 ```blocks
