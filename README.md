@@ -1,35 +1,49 @@
 # pxt-cozir
 # COZIR sensor by Let's Talk Science
-This library provides category blocks to collect data from the custom MonkMakes GSS COZIR printed circuit board sensor.
+This library provides category blocks to collect data from the custom MonkMakes GSS COZIR printed circuit board sensor. This board, designed for use with the Lets Talk Science Living Space Project, provides a CO2, temperature and Relative Humidity measurements to a BBC micro:bit.
 
 This project was made possible through the generosity of our supporters, the government of Canada CanCode initiative and the Canadian Space Agency.
 
-## Calibrate COZIR with Altitude in SetUp
-[Download MakeCode File for SetUp Cozir / Calibrate / Altitude](https://makecode.microbit.org/_MKUAYVPpJ9fo)
-
-You will need to download the program from the link above and flash it to your microbit.
-
+## Getting Started
 You will then need to connect your CozIR sensor to the microbit as shown below:
+[image]: https://www.monkmakes.com/wp-content/uploads/2018/09/CO2_for_m_b_connected-copia-653x1024.jpg "microbit CozIR connections"
 
-[logo]: https://www.monkmakes.com/wp-content/uploads/2018/09/CO2_for_m_b_connected-copia-653x1024.jpg "microbit CozIR connections"
+Then flash the following program onto your micro:bit by [clicking this link](https://makecode.microbit.org/_2v5HM0fmjEJE) to open the blocks editor and then click on Download (bottom of the web page) and copy the hex file onto your micro:bit.
 
+Once the program is uploaded, pressing Button A will display the CO2 level in parts per million of CO2. Pressing button B will display the temperature in degrees C and both buttons together will show the relative humidity.
 
-### Program Breakdown
+Inside the *on start* block, the big *serial redirect to* block starts serial transfer of data between the micro:bit and the CO2 sensor.
 
-On Start
-Begins the 
+## CO2 Concentrations
+What do these readings mean?
 
-Enter the altitude of your location.
-*If you are at or below sea level you can remove this block from your program.*
+Fresh outdoor air should give a reading of around 400. In a smallish room with a few people in it, this will rapidly rise above 1000, as people breathe out CO2. If it gets above 2000 then your air is getting dangerously unhealthy.
+
+## Calibration
+Your sensor is a sensitive scientific instrument and the readings it gives will gradually get less accurate. If you leave the sensor powered-up in a well ventilated room for 24 hours, then it will calibrate itself automatically.
+
+You can also force calibration using the Calibrate CO2 block in the Let's Talk Science!/Parlons sciences! blocks category. This will set the sensor’s readings back to 400. So you should run this block only after the sensor has been in fresh air for 30 mins or so.
+
+### Sample Calibration Program
+You can flash the sample calibration program onto your micro:bit by [clicking this link](https://makecode.microbit.org/_isqDH4RjmgJg) to open the blocks editor and then click on Download (bottom of the web page) and copy the hex file onto your micro:bit.
+
+## Altitude Compensation
+If you live somewhere high up, then you need to tell the sensor about this by putting an *altitude* block into your *on start* block and then changing its number to your altitude above sea-level in meters.
 
 ```blocks
-input.onButtonPressed(Button.AB, function () {
-    COZIR.Altitude(0)
-    COZIR.setupCozir()
-    basic.showString("x")
-    basic.pause(500)
-})
+serial.redirect(
+SerialPin.P0,
+SerialPin.P1,
+BaudRate.BaudRate9600
+)
+COZIR.Altitude(0)
+basic.pause(500)
 ```
+
+## Battery Power
+Once you have the code all working, you can disconnect the USB power and instead power the CO2 Sensor Board through the DC barrel jack using either a battery pack or a DC adapter. In both cases the power supply should be of between 5 and 9V.
+
+When powered by batteries in this way, the CO2 sensor will provide power back to the micro:bit. But make sure you have the power leads connected right between the CO2 sensor board and the micro:bit or your micro:bit could be damaged.
 
 ## Supported targets
 * for PXT/microbit
