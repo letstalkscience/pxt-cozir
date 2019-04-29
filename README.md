@@ -5,9 +5,7 @@ This library provides category blocks to collect data from the custom MonkMakes 
 This project was made possible through the generosity of our supporters, the government of Canada CanCode initiative and the Canadian Space Agency.
 
 ## Calibrate COZIR with Altitude in SetUp
----
 [Download MakeCode File for SetUp Cozir / Calibrate / Altitude](https://makecode.microbit.org/_MKUAYVPpJ9fo)
----
 
 Enter the altitude of your location.  If you are at or below sea level you can remove this block from your program.
 ```blocks
