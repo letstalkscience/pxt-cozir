@@ -6,7 +6,7 @@ This project was made possible through the generosity of our supporters, the gov
 
 ## Getting Started
 You will then need to connect your CozIR sensor to the microbit as shown below:
-[image]: https://www.monkmakes.com/wp-content/uploads/2018/09/CO2_for_m_b_connected-copia-653x1024.jpg "microbit CozIR connections"
+![alt text](https://github.com/letstalkscience/pxt-cozir/images/CO2_for_m_b_connected-copia-653x1024.jpg "microbit CozIR connections")
 
 Then flash the following program onto your micro:bit by [clicking this link](https://makecode.microbit.org/_2v5HM0fmjEJE) to open the blocks editor and then click on Download (bottom of the web page) and copy the hex file onto your micro:bit.
 
