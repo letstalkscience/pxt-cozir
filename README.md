@@ -7,7 +7,21 @@ This project was made possible through the generosity of our supporters, the gov
 ## Calibrate COZIR with Altitude in SetUp
 [Download MakeCode File for SetUp Cozir / Calibrate / Altitude](https://makecode.microbit.org/_MKUAYVPpJ9fo)
 
-Enter the altitude of your location.  If you are at or below sea level you can remove this block from your program.
+You will need to download the program from the link above and flash it to your microbit.
+
+You will then need to connect your CozIR sensor to the microbit as shown below:
+
+[logo]: https://www.monkmakes.com/wp-content/uploads/2018/09/CO2_for_m_b_connected-copia-653x1024.jpg "microbit CozIR connections"
+
+
+### Program Breakdown
+
+On Start
+Begins the 
+
+Enter the altitude of your location.
+*If you are at or below sea level you can remove this block from your program.*
+
 ```blocks
 input.onButtonPressed(Button.AB, function () {
     COZIR.Altitude(0)
