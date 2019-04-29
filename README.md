@@ -5,7 +5,7 @@ This library provides category blocks to collect data from the custom MonkMakes 
 This project was made possible through the generosity of our supporters, the government of Canada CanCode initiative and the Canadian Space Agency.
 
 ## Getting Started
-You will then need to connect your CozIR sensor to the microbit as shown below
+You will then need to connect your CozIR sensor to the microbit as shown below.
 
 ![image-1](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/CO2_for_m_b_connected.png "micro:bit COZIR connections")<!-- .element width="80%"-->
 
