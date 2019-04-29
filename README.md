@@ -1,8 +1,8 @@
 # pxt-cozir
 # COZIR sensor by Let's Talk Science
-This library provides category blocks to collect data from the custom MonkMakes GSS COZIR printed circuit board sensor. This board, designed for use with the Lets Talk Science Living Space Project, provides a CO2, temperature and Relative Humidity measurements to a BBC micro:bit.
+<p>This library provides category blocks to collect data from the custom MonkMakes GSS COZIR printed circuit board sensor. This board, designed for use with the Lets Talk Science Living Space Project, provides a CO2, temperature and Relative Humidity measurements to a BBC micro:bit.</p>
 
-This project was made possible through the generosity of our supporters, the government of Canada CanCode initiative and the Canadian Space Agency.
+<p>This project was made possible through the generosity of our supporters, the government of Canada CanCode initiative and the Canadian Space Agency.</p>
 
 ## Getting Started
 You will then need to connect your CozIR sensor to the microbit as shown below
