@@ -1,8 +1,8 @@
 # pxt-cozir
 # COZIR sensor by Let's Talk Science
-<p>This library provides category blocks to collect data from the custom MonkMakes GSS COZIR printed circuit board sensor. This board, designed for use with the Lets Talk Science Living Space Project, provides a CO2, temperature and Relative Humidity measurements to a BBC micro:bit.</p>
+This library provides category blocks to collect data from the custom MonkMakes GSS COZIR printed circuit board sensor. This board, designed for use with the Lets Talk Science Living Space Project, provides a CO2, temperature and Relative Humidity measurements to a BBC micro:bit.
 
-<p>This project was made possible through the generosity of our supporters, the government of Canada CanCode initiative and the Canadian Space Agency.</p>
+This project was made possible through the generosity of our supporters, the government of Canada CanCode initiative and the Canadian Space Agency.
 
 ## Getting Started
 You will then need to connect your CozIR sensor to the microbit as shown below
@@ -37,7 +37,7 @@ Wire-up the board to your micro:bit as shown previously. Then flash the followin
 ## Altitude Compensation
 If you live somewhere high up, then you need to tell the sensor about this by putting an *altitude* block into your *on start* block and then changing its number to your altitude above sea-level in meters.
 
-![image-4](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-altitude.png  "COZIR altitude block")<!-- .element width="25%"-->
+![image-4](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-altitude.png  "COZIR altitude block")<!-- .element width="150"-->
 
 ## Battery Power
 Once you have the code all working, you can disconnect the USB power and instead power the CO2 Sensor Board through the DC barrel jack using either a battery pack or a DC adapter. In both cases the power supply should be of between 5 and 9V.
