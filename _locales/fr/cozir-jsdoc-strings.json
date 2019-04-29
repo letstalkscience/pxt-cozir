@@ -1,10 +1,10 @@
 ﻿{
   "COZIR": "makecode lts cozir sensor package\nLet's Talk Science - Living Space Action Project\nAuthor: Simon Monk @ @https://monkmakes.com\nCo-Author: Jennifer Ferguson @ @http://letstalkscience.ca\nTranslation: Mylene Gamache-Tremblay @http://parlonssciences.ca\nDate: 05-2018\n\nLet's Talk Science! COZIR block",
-  "COZIR.Co2": "Fournit la concentration de CO2 en parties par million (ppm)",
-  "COZIR.calibrateCo2": "Exécutez cette fonction en plein-air et le module s'étalonnera lui-même\nen considérant un niveau de CO2 de 400ppm",
+  "COZIR.Co2": "Fournit la concentration de Co2 en parties par million (ppm)",
+  "COZIR.calibrateCo2": "Exécutez cette fonction en plein-air et le module s'étalonnera lui-même\nen considérant un niveau de Co2 de 400ppm",
   "COZIR.relativeHumidity": "Fournit l'humidité relative en pourcentage",
-  "COZIR.Altitude": "Compensation pour l'altitude, spécifiez votre altitude en mètres.",
-  "COZIR.Altitude|param|metres": "altitude en mètres",
+  "COZIR.altitude": "Compensation pour l'altitude, spécifiez votre altitude en mètres.",
+  "COZIR.altitude|param|metres": "altitude en mètres",
   "COZIR.setupCozir": "Paramétrer le module COZIR - utilisé seulement en usine\nceci établit le mode 'requête' du COZIR",
   "COZIR.temperature": "Fournit la température en degrés Celsius"
 }
