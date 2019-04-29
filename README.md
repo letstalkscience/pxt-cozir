@@ -37,7 +37,7 @@ Wire-up the board to your micro:bit as shown previously. Then flash the followin
 ## Altitude Compensation
 If you live somewhere high up, then you need to tell the sensor about this by putting an *altitude* block into your *on start* block and then changing its number to your altitude above sea-level in meters.
 
-![image-4](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-altitude.png  "COZIR altitude block")<!-- .element height="25%"-->
+![image-4](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-altitude.png  "COZIR altitude block")<!-- .element height="25%" width="25%"-->
 
 ```blocks
 serial.redirect(
