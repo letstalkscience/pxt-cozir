@@ -40,19 +40,19 @@ namespace COZIR {
     })
 
     /**
-    * Return the Co2 concentration in parts per million (ppm).
+    * Return the CO2 concentration in parts per million (ppm)
     */
-    //% blockId=device_co2_toggle block="Co2 (PPM)"
-    export function co2(): number {
+    //% blockId=device_co2_toggle block="CO2 (PPM)"
+    export function Co2(): number {
         serial.writeString("Z\r\n")
         basic.pause(200)
         return co2
     }
 
     /**
-    * Return the temperature in degrees celsius.
+    * Return the temperature in degrees Centigrade
     */
-    //% blockId=device_temperature_toggle block="temperature (°C)"
+    //% blockId=device_temperature_toggle block="Temperature (°C)"
     export function temperature(): number {
         serial.writeString("T\r\n")
         basic.pause(200)
@@ -60,9 +60,9 @@ namespace COZIR {
     }
 
     /**
-    * Return the relative humidty as a percentage.
+    * Return the relative humidty as a percentage
     */
-    //% blockId=device_relativeHumidity_toggle block="relative humidity (RH)"
+    //% blockId=device_relativeHumidity_toggle block="Relative Humidity (RH)"
     export function relativeHumidity(): number {
         serial.writeString("H\r\n")
         basic.pause(200)
@@ -71,9 +71,9 @@ namespace COZIR {
 
     /**
     * Run this block when in fresh air and the module will re-calibrate it
-    * assuming that the Co2 level is 400ppm.
+    * assuming that the CO2 level is 400ppm
     */
-    //% blockId=device_calibrateCo2_toggle block="calibrate Co2"
+    //% blockId=device_calibrateCo2_toggle block="Calibrate CO2"
     //% advanced=true
     export function calibrateCo2(): void {
         serial.writeString("G\r\n")
@@ -81,11 +81,11 @@ namespace COZIR {
 
     /**
     * Compensate for altitude. Specify altitude in metres
-    * @param metres altitude in metres.
+    * @param metres altitude in metres
     */
     //% block
     //% advanced=true
-    export function altitude(metres: number): void {
+    export function Altitude(metres: number): void {
         let param = 8192 + metres
         let message = "S " + param + "\r\n"
         //basic.showString(message)
@@ -95,9 +95,9 @@ namespace COZIR {
 
     /**
     * Setup the COZIR module -only used during manufacturing
-    * this sets the mode of the COZIR to 'request'.
+    * this sets the mode of the COZIR to 'request'
     */
-    //% blockId=device_setupCozir_toggle block="set up COZIR"
+    //% blockId=device_setupCozir_toggle block="Set Up COZIR"
     //% advanced=true
     export function setupCozir(): void {
         serial.writeString("K 2\r\n")
