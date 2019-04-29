@@ -19,7 +19,9 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 
 ## Calibrate COZIR with Altitude in SetUp
-[SetUp Cozir / Calibrate (with Altitude)] (https://makecode.microbit.org/_0AxRHuahWRJd)
+
+[SetUp Cozir / Calibrate / Altitude](https://makecode.microbit.org/_0AxRHuahWRJd)
+
 
 ```blocks
 
