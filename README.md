@@ -5,7 +5,7 @@
  * Date: 05-2018
  
 # COZIR sensor by Let's Talk Science | Parlons sciences
-This library provides category blocks to collect data from the custom MonkMakes GSS COZIR printed circuit board sensor. This board, designed for use with the Lets Talk Science Living Space Project, provides a CO2, temperature and Relative Humidity measurements to a BBC micro:bit.
+This library provides category blocks to collect data from the custom [MonkMakes GSS COZIR printed circuit board sensor](https://www.monkmakes.com/mb_co2/). This board, designed for use with the Lets Talk Science Living Space Project, provides a CO2, temperature and Relative Humidity measurements to a BBC micro:bit.
 
 This project was made possible through the generosity of our supporters, the government of Canada CanCode initiative and the Canadian Space Agency.  
 
