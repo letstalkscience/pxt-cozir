@@ -14,25 +14,30 @@ Then flash the following program onto your micro:bit by clicking the image to op
 <!-- COZIR MakeCode Simple Program-->
 <a href="https://makecode.microbit.org/_2v5HM0fmjEJE" target="_blank"><img src="https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-cozir-simple.png" title="COZIR Simple Program" alt="image-2"></a><!-- .element width="80%"-->
 
-Once the program is uploaded, pressing Button A will display the CO2 level in parts per million of CO2. Pressing button B will display the temperature in degrees C and both buttons together will show the relative humidity.
+Once the program is uploaded, pressing **button A** will display the CO2 level in parts per million of CO2. Pressing **button B** will display the temperature in degrees C and **both A+B buttons** together will show the relative humidity.
 
-Inside the *on start* block, the big *serial redirect to* block starts serial transfer of data between the micro:bit and the CO2 sensor.
+If you are wondering about the big **serial redirect to** block in the **on start** block, well this block starts serial transfer of data between the micro:bit and the CO2 sensor..
 
 ## CO2 Concentrations
 What do these readings mean?
 
-Fresh outdoor air should give a reading of around 400. In a smallish room with a few people in it, this will rapidly rise above 1000, as people breathe out CO2. If it gets above 2000 then your air is getting dangerously unhealthy.
+Fresh outdoor air should give a reading of around 400 PPM. In a smallish room with a few people in it, this will rapidly rise above 1000 PPM, as people breathe out CO2. If it gets above 3000 PPM then your air is getting dangerously unhealthy.
 
 ## Calibration
 Your sensor is a sensitive scientific instrument and the readings it gives will gradually get less accurate. If you leave the sensor powered-up in a well ventilated room for 24 hours, then it will calibrate itself automatically.
 
-You can also force calibration using the Calibrate CO2 block in the Let's Talk Science!/Parlons sciences! blocks category. This will set the sensor’s readings back to 400. So you should run this block only after the sensor has been in fresh air for 30 mins or so.
+You can also force calibration using the Calibrate CO2 block in the Let's Talk Science!/Parlons sciences! blocks category. This will set the sensor’s readings back to 400 PPM. So you should run this block only after the sensor has been in fresh air for 30 mins or so.
 
 ### Sample Calibration Program
-You can flash the sample calibration program onto your micro:bit by [clicking this link](https://makecode.microbit.org/_isqDH4RjmgJg) to open the blocks editor and then click on Download (bottom of the web page) and copy the hex file onto your micro:bit.
+Wire-up the board to your micro:bit as shown previously. Then flash the following program onto your micro:bit by clicking the image to open the blocks editor and then click on Download *(bottom of the web page)* and copy the hex file onto your micro:bit.
+
+<!-- COZIR Sample Calibration Program-->
+<a href="https://makecode.microbit.org/_a5PE3a7hDUXM" target="_blank"><img src="https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-cozir-calibrate.png" title="COZIR Calibrate Program" alt="image-3"></a><!-- .element width="80%"-->
 
 ## Altitude Compensation
 If you live somewhere high up, then you need to tell the sensor about this by putting an *altitude* block into your *on start* block and then changing its number to your altitude above sea-level in meters.
+
+![image-4](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-altitude.png  "COZIR altitude block")<!-- .element width="35%"-->
 
 ```blocks
 serial.redirect(
