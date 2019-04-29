@@ -23,6 +23,28 @@ Then flash the following program onto your micro:bit by clicking the image to op
 <!-- COZIR MakeCode Simple Program-->
 <a href="https://makecode.microbit.org/_2v5HM0fmjEJE" target="_blank"><img src="https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-cozir-simple-1.png" title="COZIR Simple Program" alt="image-2"></a><!-- .element width="80%"-->
 
+<!-- COZIR MakeCode Simple Program - Embed Blocks-->
+```blocks
+input.onButtonPressed(Button.A, function () {
+    basic.showNumber(Math.round(COZIR.Co2()))
+    basic.showString(" PPM")
+})
+input.onButtonPressed(Button.AB, function () {
+    basic.showNumber(Math.round(COZIR.relativeHumidity()))
+    basic.showString(" %RH")
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showNumber(Math.round(COZIR.temperature()))
+    basic.showString(" C")
+})
+serial.redirect(
+SerialPin.P0,
+SerialPin.P1,
+BaudRate.BaudRate9600
+)
+basic.pause(500)
+```
+
 Once the program is uploaded, pressing **button A** will display the CO2 level in parts per million of CO2. Pressing **button B** will display the temperature in degrees C and **both A+B buttons** together will show the relative humidity.
 
 If you are wondering about the big **serial redirect to** block in the **on start** block, well this block starts serial transfer of data between the micro:bit and the CO2 sensor..
@@ -43,10 +65,59 @@ Wire-up the board to your micro:bit as shown previously. Then flash the followin
 <!-- COZIR Sample Calibration Program-->
 <a href="https://makecode.microbit.org/_a5PE3a7hDUXM" target="_blank"><img src="https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-cozir-calibrate.png" title="COZIR Calibrate Program" alt="image-3"></a><!-- .element width="80%"-->
 
+<!-- COZIR Sample Calibration Program - Embed Blocks-->
+```blocks
+let modes: string[] = []
+let mode = 0
+input.onButtonPressed(Button.A, function () {
+    mode += 1
+    if (mode == 3) {
+        mode = 0
+    }
+    basic.showString(modes[mode])
+})
+input.onButtonPressed(Button.AB, function () {
+    COZIR.calibrateCo2()
+    basic.showString("+")
+    basic.pause(500)
+})
+serial.redirect(
+SerialPin.P0,
+SerialPin.P1,
+BaudRate.BaudRate9600
+)
+mode = 0
+modes = [" PPM", " C", " %RH"]
+basic.pause(500)
+basic.forever(function () {
+    basic.showString(modes[mode])
+    if (mode == 0) {
+        basic.showNumber(Math.round(COZIR.Co2()))
+    }
+    if (mode == 1) {
+        basic.showNumber(Math.round(COZIR.temperature()))
+    }
+    if (mode == 2) {
+        basic.showNumber(Math.round(COZIR.relativeHumidity()))
+    }
+})
+```
+
 ## Altitude Compensation
 If you live somewhere high up, then you need to tell the sensor about this by putting an *altitude* block into your *on start* block and then changing its number to your altitude above sea-level in meters.
 
 ![image-4](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-altitude-3a.png  "COZIR altitude block")<!-- .element width="80%"-->
+
+<!-- COZIR Sample Altitude Compensation - Embed Block-->
+```blocks
+serial.redirect(
+SerialPin.P0,
+SerialPin.P1,
+BaudRate.BaudRate9600
+)
+COZIR.Altitude(0)
+basic.pause(500)
+```
 
 ## Battery Power
 Once you have the code all working, you can disconnect the USB power and instead power the CO2 Sensor Board through the DC barrel jack using either a battery pack or a DC adapter. In both cases the power supply should be of between 5 and 9V.
