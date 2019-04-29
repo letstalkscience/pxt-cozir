@@ -62,7 +62,7 @@ namespace COZIR {
     /**
     * Return the relative humidty as a percentage
     */
-    //% blockId=device_relativeHumidity_toggle block="relative humidity (RH)"
+    //% blockId=device_relativeHumidity_toggle block="relative humidity (%RH)"
     export function relativeHumidity(): number {
         serial.writeString("H\r\n")
         basic.pause(200)
