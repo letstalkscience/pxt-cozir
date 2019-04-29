@@ -7,7 +7,7 @@ This project was made possible through the generosity of our supporters, the gov
 ## Getting Started
 You will then need to connect your CozIR sensor to the microbit as shown below
 
-![image-1](https://github.com/letstalkscience/pxt-cozir/images/CO2_for_m_b_connected-copia-653x1024.jpg "microbit CozIR connections")
+![image-1](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/CO2_for_m_b_connected-copia-653x1024.jpg "microbit CozIR connections 1")
 
 ![image-2](https://www.monkmakes.com/wp-content/uploads/2018/09/CO2_for_m_b_connected-copia-653x1024.jpg "microbit CozIR connections 2")
 
