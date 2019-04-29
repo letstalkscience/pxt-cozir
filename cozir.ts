@@ -42,7 +42,7 @@ namespace COZIR {
     /**
     * Return the CO2 concentration in parts per million (ppm)
     */
-    //% blockId=device_co2_toggle block="CO2 (PPM)"
+    //% blockId=device_co2_toggle block="Co2 (PPM)"
     export function Co2(): number {
         serial.writeString("Z\r\n")
         basic.pause(200)
@@ -50,9 +50,9 @@ namespace COZIR {
     }
 
     /**
-    * Return the temperature in degrees Centigrade
+    * Return the temperature in degrees Celsius
     */
-    //% blockId=device_temperature_toggle block="Temperature (°C)"
+    //% blockId=device_temperature_toggle block="temperature (°C)"
     export function temperature(): number {
         serial.writeString("T\r\n")
         basic.pause(200)
@@ -62,7 +62,7 @@ namespace COZIR {
     /**
     * Return the relative humidty as a percentage
     */
-    //% blockId=device_relativeHumidity_toggle block="Relative Humidity (RH)"
+    //% blockId=device_relativeHumidity_toggle block="relative humidity (RH)"
     export function relativeHumidity(): number {
         serial.writeString("H\r\n")
         basic.pause(200)
@@ -71,9 +71,9 @@ namespace COZIR {
 
     /**
     * Run this block when in fresh air and the module will re-calibrate it
-    * assuming that the CO2 level is 400ppm
+    * assuming that the Co2 level is 400ppm
     */
-    //% blockId=device_calibrateCo2_toggle block="Calibrate CO2"
+    //% blockId=device_calibrateCo2_toggle block="calibrate Co2"
     //% advanced=true
     export function calibrateCo2(): void {
         serial.writeString("G\r\n")
@@ -97,7 +97,7 @@ namespace COZIR {
     * Setup the COZIR module -only used during manufacturing
     * this sets the mode of the COZIR to 'request'
     */
-    //% blockId=device_setupCozir_toggle block="Set Up COZIR"
+    //% blockId=device_setupCozir_toggle block="set up COZIR"
     //% advanced=true
     export function setupCozir(): void {
         serial.writeString("K 2\r\n")
