@@ -4,6 +4,24 @@ This library provides category blocks to collect data from the custom MonkMakes 
 
 This project was made possible through the generosity of our supporters, the government of Canada CanCode initiative and the Canadian Space Agency.
 
+## Calibrate COZIR with Altitude in SetUp
+---
+[Download MakeCode File for SetUp Cozir / Calibrate / Altitude](https://makecode.microbit.org/_MKUAYVPpJ9fo)
+---
+
+Enter the altitude of your location.  If you are at or below sea level you can remove this block from your program.
+```blocks
+input.onButtonPressed(Button.AB, function () {
+    COZIR.Altitude(0)
+    COZIR.setupCozir()
+    basic.showString("x")
+    basic.pause(500)
+})
+```
+
+## Supported targets
+* for PXT/microbit
+
 ## License
 MIT License
 Copyright 2018 Let's Talk Science
@@ -13,17 +31,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Code of Conduct
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-## Supported targets
-* for PXT/microbit
-
-
-## Calibrate COZIR with Altitude in SetUp
-
-[SetUp Cozir / Calibrate / Altitude](https://makecode.microbit.org/_0AxRHuahWRJd)
-
-
-```blocks
-
-```
 
