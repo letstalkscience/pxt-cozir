@@ -1,10 +1,10 @@
 {
-  "COZIR.altitude|block": "true",
-  "COZIR.Co2|block": "Co2 (PPM)",
-  "COZIR.calibrateCo2|block": "calibrate Co2",
-  "COZIR.relativeHumidity|block": "relative humidity (RH)",
-  "COZIR.setupCozir|block": "set up COZIR",
-  "COZIR.temperature|block": "temperature (°C)",
+  "COZIR.Altitude|block": "true",
+  "COZIR.Co2|block": "CO2 (PPM)",
+  "COZIR.calibrateCo2|block": "Calibrate CO2",
+  "COZIR.relativeHumidity|block": "Relative Humidity (RH)",
+  "COZIR.setupCozir|block": "Set Up COZIR",
+  "COZIR.temperature|block": "Temperature (°C)",
   "COZIR|block": "Let's Talk Science!",
   "{id:category}COZIR": "COZIR"
 }
