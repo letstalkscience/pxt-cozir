@@ -10,8 +10,8 @@ This library provides category blocks to collect data from the custom MonkMakes 
 This project was made possible through the generosity of our supporters, the government of Canada CanCode initiative and the Canadian Space Agency.  
 
 For more information about this project, visit our website:
-English: [Let's Talk Science Living Space](http://explorecuriocity.org/LivingSpace.aspx)
-French: [Parlons sciences Espace vivant](http://explorecuriocite.org/Espacevivant)
+ * English: [Let's Talk Science Living Space](http://explorecuriocity.org/LivingSpace.aspx)
+ * French: [Parlons sciences Espace vivant](http://explorecuriocite.org/Espacevivant)
 
 ## Getting Started
 You will then need to connect your CozIR sensor to the microbit as shown below.
