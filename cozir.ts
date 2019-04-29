@@ -50,7 +50,7 @@ namespace COZIR {
     }
 
     /**
-    * Return the temperature in degrees celcius
+    * Return the temperature in degrees celsius
     */
     //% blockId=device_temperature_toggle block="temperature (°C)"
     export function temperature(): number {
