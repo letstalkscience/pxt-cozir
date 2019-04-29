@@ -7,7 +7,7 @@ This project was made possible through the generosity of our supporters, the gov
 ## Getting Started
 You will then need to connect your CozIR sensor to the microbit as shown below
 
-![image-1](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/CO2_for_m_b_connected-copia-653x1024.jpg  "micro:bit COZIR connections")<!-- .element width="50%"-->
+![image-1](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/CO2_for_m_b_connected-copia-653x1024.jpg  "micro:bit COZIR connections")<!-- .element width="80%"-->
 
 Then flash the following program onto your micro:bit by clicking the image to open the blocks editor and then click on Download *(bottom of the web page)* and copy the hex file onto your micro:bit.
 
@@ -37,7 +37,7 @@ Wire-up the board to your micro:bit as shown previously. Then flash the followin
 ## Altitude Compensation
 If you live somewhere high up, then you need to tell the sensor about this by putting an *altitude* block into your *on start* block and then changing its number to your altitude above sea-level in meters.
 
-![image-4](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-altitude.png  "COZIR altitude block")<!-- .element width="150"-->
+![image-4](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-altitude.png  "COZIR altitude block")<!-- .element width="80%"-->
 
 ## Battery Power
 Once you have the code all working, you can disconnect the USB power and instead power the CO2 Sensor Board through the DC barrel jack using either a battery pack or a DC adapter. In both cases the power supply should be of between 5 and 9V.
