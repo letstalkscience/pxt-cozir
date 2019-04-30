@@ -1,6 +1,6 @@
 {
   "COZIR.Altitude|block": "true",
-  "COZIR.Co2|block": "Co2 (PPM)",
+  "COZIR.Co2|block": "CO2 (PPM)",
   "COZIR.calibrateCo2|block": "calibrate CO2",
   "COZIR.relativeHumidity|block": "relative humidity (RH)",
   "COZIR.setupCozir|block": "set up COZIR",
