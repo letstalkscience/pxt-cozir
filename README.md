@@ -14,7 +14,7 @@ For more information about this project, visit our website:
  * French: [Parlons sciences Espace vivant](http://explorecuriocite.org/Espacevivant)
 
 ## Getting Started
-You will then need to connect your COZIR sensor to the microbit as shown below.
+You will need to connect your COZIR sensor to the microbit as shown below.
 
 ![image-1](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/CO2_for_m_b_connected.png "micro:bit COZIR connections")<!-- .element width="80%"-->
 
