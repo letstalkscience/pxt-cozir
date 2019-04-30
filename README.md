@@ -3,6 +3,7 @@
  * Co-Author: Jennifer Ferguson @ http://letstalkscience.ca
  * Translation: Mylene Gamache-Tremblay @ http://parlonssciences.ca
  * Date: 05-2018
+ * Product info: https://www.monkmakes.com/mb_co2/
  
 # COZIR sensor by Let's Talk Science | Parlons sciences
 This library provides category blocks to collect data from the custom [MonkMakes GSS COZIR printed circuit board sensor](https://www.monkmakes.com/mb_co2/). This board, designed for use with the Lets Talk Science Living Space Project, provides a Co2, temperature and Relative Humidity measurements to a BBC micro:bit.
