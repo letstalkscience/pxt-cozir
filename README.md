@@ -6,7 +6,7 @@
  * Product info: https://www.monkmakes.com/mb_co2/
  
 # COZIR sensor by Let's Talk Science | Parlons sciences
-This library provides category blocks to collect data from the custom [MonkMakes GSS COZIR printed circuit board sensor](https://www.monkmakes.com/mb_co2/). This board, designed for use with the Lets Talk Science Living Space Project, provides a Co2, temperature and Relative Humidity measurements to a BBC micro:bit.
+This library provides category blocks to collect data from the custom [MonkMakes GSS COZIR printed circuit board sensor](https://www.monkmakes.com/mb_co2/). This board, designed for use with the Lets Talk Science Living Space Project, provides a CO2, temperature and Relative Humidity measurements to a BBC micro:bit.
 
 This project was made possible through the generosity of our supporters, the government of Canada CanCode initiative and the Canadian Space Agency.  
 
@@ -46,19 +46,19 @@ BaudRate.BaudRate9600
 basic.pause(500)
 ```
 
-Once the program is uploaded, pressing **button A** will display the Co2 level in parts per million of Co2. Pressing **button B** will display the temperature in degrees C and **both A+B buttons** together will show the relative humidity.
+Once the program is uploaded, pressing **button A** will display the CO2 level in parts per million of CO2. Pressing **button B** will display the temperature in degrees C and **both A+B buttons** together will show the relative humidity.
 
-If you are wondering about the big **serial redirect to** block in the **on start** block, well this block starts serial transfer of data between the micro:bit and the Co2 sensor.
+If you are wondering about the big **serial redirect to** block in the **on start** block, well this block starts serial transfer of data between the micro:bit and the CO2 sensor.
 
-## Co2 Concentrations
+## CO2 Concentrations
 What do these readings mean?
 
-Fresh outdoor air should give a reading of around 400 PPM. In a smallish room with a few people in it, this will rapidly rise above 1000 PPM, as people breathe out Co2. If it gets above 3000 PPM then your air is getting dangerously unhealthy.
+Fresh outdoor air should give a reading of around 400 PPM. In a smallish room with a few people in it, this will rapidly rise above 1000 PPM, as people breathe out CO2. If it gets above 3000 PPM then your air is getting dangerously unhealthy.
 
 ## Calibration
 Your sensor is a sensitive scientific instrument and the readings it gives will gradually get less accurate. If you leave the sensor powered-up in a well ventilated room for 24 hours, then it will calibrate itself automatically.
 
-You can also force calibration using the Calibrate Co2 block in the Let's Talk Science!/Parlons sciences! blocks category. This will set the sensor’s readings back to 400 PPM. So you should run this block only after the sensor has been in fresh air for 30 mins or so.
+You can also force calibration using the Calibrate CO2 block in the Let's Talk Science!/Parlons sciences! blocks category. This will set the sensor’s readings back to 400 PPM. So you should run this block only after the sensor has been in fresh air for 30 mins or so.
 
 ### Sample Calibration Program
 Wire-up the board to your micro:bit as shown previously. Then flash the following program onto your micro:bit.
@@ -121,9 +121,9 @@ basic.pause(500)
 ```
 
 ## Battery Power
-Once you have the code all working, you can disconnect the USB power and instead power the Co2 Sensor Board through the DC barrel jack using either a battery pack or a DC adapter. In both cases the power supply should be of between 5 and 9V.
+Once you have the code all working, you can disconnect the USB power and instead power the CO2 Sensor Board through the DC barrel jack using either a battery pack or a DC adapter. In both cases the power supply should be of between 5 and 9V.
 
-When powered by batteries in this way, the Co2 sensor will provide power back to the micro:bit. But make sure you have the power leads connected right between the Co2 sensor board and the micro:bit or your micro:bit could be damaged.
+When powered by batteries in this way, the CO2 sensor will provide power back to the micro:bit. But make sure you have the power leads connected right between the CO2 sensor board and the micro:bit or your micro:bit could be damaged.
 
 ## Supported targets
 * for PXT/microbit
