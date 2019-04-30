@@ -18,7 +18,7 @@ You will need to connect your COZIR sensor to the microbit as shown below.
 
 ![image-1](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/CO2_for_m_b_connected.png "micro:bit COZIR connections")<!-- .element width="80%"-->
 
-Then flash the following program onto your micro:bit by clicking the image to open the blocks editor and then click on Download *(bottom of the web page)* and copy the hex file onto your micro:bit.
+Then flash the following program onto your micro:bit.
 
 <!-- COZIR MakeCode Simple Program-->
 <a href="https://makecode.microbit.org/_K4qcJHTprTiX" target="_blank"><img src="https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-cozir-simple-1.png" title="COZIR Simple Program" alt="image-2"></a><!-- .element width="80%"-->
@@ -60,7 +60,7 @@ Your sensor is a sensitive scientific instrument and the readings it gives will 
 You can also force calibration using the Calibrate Co2 block in the Let's Talk Science!/Parlons sciences! blocks category. This will set the sensor’s readings back to 400 PPM. So you should run this block only after the sensor has been in fresh air for 30 mins or so.
 
 ### Sample Calibration Program
-Wire-up the board to your micro:bit as shown previously. Then flash the following program onto your micro:bit by clicking the image to open the blocks editor and then click on Download *(bottom of the web page)* and copy the hex file onto your micro:bit.
+Wire-up the board to your micro:bit as shown previously. Then flash the following program onto your micro:bit.
 
 <!-- COZIR Sample Calibration Program-->
 <a href="https://makecode.microbit.org/_VA7WWK7PqDV0" target="_blank"><img src="https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-cozir-calibrate-2.png" title="COZIR Calibrate Program" alt="image-3"></a><!-- .element width="80%"-->
