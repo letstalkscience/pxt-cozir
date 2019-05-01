@@ -282,4 +282,4 @@ LA BIBLIOTHÈQUE EST FOURNIE "TELLE QUELLE", SANS GARANTIE D'AUCUNE SORTE, EXPLI
 ## Code de conduite
 Ce projet a adopté le Code de conduite de Microsoft (anglais)[Code de conduite de Microsoft (anglais)] (https://opensource.microsoft.com/codeofconduct/). Pour plus d'informations, voir les ) [FAQ du Code de conduite (anglais](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) avec vos questions ou commentaires.
 
-### [back to top](#top)
+### [haut de la page](#top)
