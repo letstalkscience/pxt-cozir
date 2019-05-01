@@ -71,7 +71,7 @@ namespace COZIR {
 
     /**
     * Run this block when in fresh air and the module will re-calibrate it
-    * assuming that the Co2 level is 400PPM.
+    * assuming that the CO2 level is 400PPM.
     */
     //% blockId=device_calibrateCo2_toggle block="calibrate Co2"
     //% advanced=true
