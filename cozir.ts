@@ -42,7 +42,7 @@ namespace COZIR {
     /**
     * Return the CO2 concentration in parts per million (PPM).
     */
-    //% blockId=device_co2_toggle block="Co2 (PPM)"
+    //% blockId=device_co2_toggle block="CO2 (PPM)"
     export function Co2(): number {
         serial.writeString("Z\r\n")
         basic.pause(200)
@@ -73,7 +73,7 @@ namespace COZIR {
     * Run this block when in fresh air and the module will re-calibrate it
     * assuming that the CO2 level is 400PPM.
     */
-    //% blockId=device_calibrateCo2_toggle block="calibrate Co2"
+    //% blockId=device_calibrateCo2_toggle block="calibrate CO2"
     //% advanced=true
     export function calibrateCo2(): void {
         serial.writeString("G\r\n")
