@@ -5,6 +5,8 @@
  * Date: 05-2018
  * Product info: https://www.monkmakes.com/mb_co2/
  
+# [VIEW THE CONTENT BELOW IN FRENCH](#FrenchContent)
+ 
 # COZIR sensor by Let's Talk Science | Parlons sciences
 This library provides category blocks to collect data from the custom [MonkMakes GSS COZIR printed circuit board sensor](https://www.monkmakes.com/mb_co2/). This board, designed for use with the Lets Talk Science Living Space Project, provides a CO2, temperature and Relative Humidity measurements to a BBC micro:bit.
 
@@ -13,7 +15,8 @@ This project was made possible through the generosity of our supporters, the gov
 For more information about this project, visit our website:
  * English: [Let's Talk Science Living Space](http://explorecuriocity.org/LivingSpace.aspx)
  * French: [Parlons sciences Espace vivant](http://explorecuriocite.org/Espacevivant)
-
+ 
+ 
 ## Getting Started
 You will need to connect your COZIR sensor to the microbit as shown below.
 
@@ -137,4 +140,146 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Code of Conduct
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+
+
+
+
+### <a id="FrenchContent"></a>Contenu français ###
+
+# Dispositif de capteurs COZIR par Parlons sciences | Let's talk Science
+Cette bibliothèque fournit des blocs de catégorie pour collecter les données du  dispositif de capteurs personnalisé [MonkMakes GSS COZIR printed circuit board sensor](https://www.monkmakes.com/mb_co2/). Cette carte conçue pour l'utilisation lors du projet d'action Espace vivant de Parlons sciences transmet les mesures de dioxyde de carbone, température et humidité relative à un micro:bit BBC.
+
+Ce projet a été rendu grâce à la générosité de bienfaiteurs tels l'agence spatiale Canadienne et l'initiative CodeCan du gouvernement du Canada.  
+
+Pour plus d'information sur ce projet, visitez notre site web :
+ * Anglais: [Let's Talk Science Living Space](http://explorecuriocity.org/LivingSpace.aspx)
+ * Français: [Parlons sciences Espace vivant](http://explorecuriocite.org/Espacevivant)
+
+## Où débuter
+Vous devrez connecter votre dispositif COZIR au microbit comme illustré ci-dessous.
+
+![image-1](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/CO2_for_m_b_connected.png "Connexions micro:bit COZIR")<!-- .element width="80%"-->
+
+Ensuite, transférez le programme suivant sur votre micro:bit en cliquant sur l’image pour ouvrir l’éditeur de blocs, puis cliquez sur Télécharger *(bottom of the web page) * et copiez le fichier hex sur votre micro:bit.
+
+<!-- COZIR MakeCode Simple Program-->
+<a href="https://makecode.microbit.org/_K4qcJHTprTiX" target="_blank"><img src="https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-cozir-simple-1.png" title="COZIR Simple Program" alt="image-2"></a><!-- .element width="80%"-->
+
+<!-- COZIR MakeCode Simple Program - Embed Blocks-->
+```blocks
+input.onButtonPressed(Button.A, function () {
+    basic.showNumber(Math.round(COZIR.Co2()))
+    basic.showString(" PPM")
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showNumber(Math.round(COZIR.temperature()))
+    basic.showString(" C")
+})
+input.onButtonPressed(Button.AB, function () {
+    basic.showNumber(Math.round(COZIR.relativeHumidity()))
+    basic.showString(" %RH")
+})
+serial.redirect(
+SerialPin.P0,
+SerialPin.P1,
+BaudRate.BaudRate9600
+)
+basic.pause(500)
+```
+
+Une fois que le programme est téléchargé, appuyer sur le ** bouton A ** affichera le niveau de CO2 en parties par million de CO2. Appuyer sur le ** bouton B ** affichera la température en degrés Celsius et appuryer simultanément sur ** les deux boutons A + B ** affichera l’humidité relative.
+
+Si vous vous questionnez sur le grand bloc ** serial redirect to** dans le bloc ** on start **, Eh bien ce bloc active le transfert de données en série entre le micro :bit et le dispositif de capteurs.
+
+## Concentrations de CO2
+Que signifient ces lectures ?
+
+L’air frais extérieur devrait donner une lecture autour de 400 PPM. Dans une pièce assez petite avec quelques personnes à l’intérieur, cette donnée peut augmenter rapidement au-dessus de 1000 PPM, puisque les gens expirent du CO2. Si elle excède 3000 PPM, alors votre air devient malsain. 
+
+## Étalonnage 
+Votre dispositif de capteurs est un instrument scientifique sensible et les lectures qu'il donne deviendront progressivement moins précises. Si vous laissez le dispositif de capteurs activé dans une pièce bien aérée pendant 24 heures, il s’étalonne lui-même automatiquement. 
+
+Vous pouvez également forcer l’étalonnage à l’aide du bloc Calibration CO2 dans la catégorie de blocs Let’s Talk Science ! / Parlons sciences ! Celui-ci redéfinira les lectures du dispositif de capteurs à 400 PPM. Vous devriez donc exécuter ce bloc que lorsque le dispositif de capteurs a été à l’air frais pendant 30 minutes ou plus.
+
+###  Exemple de programme d'étalonnage 
+Connectez le dispositif de capteurs à votre micro:bit, comme illustré précédemment. Transférez ensuite le programme suivant sur votre micro:bit en cliquant sur l’image pour ouvrir l’éditeur de blocs, puis cliquez sur Télécharger *(bottom of the web page) * et copiez le fichier hex sur votre micro:bit.
+
+<!-- COZIR Sample Calibration Program-->
+<a href="https://makecode.microbit.org/_VA7WWK7PqDV0" target="_blank"><img src="https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-cozir-calibrate-2.png" title="COZIR Calibrate Program" alt="image-3"></a><!-- .element width="80%"-->
+
+<!-- COZIR Sample Calibration Program - Embed Blocks-->
+```blocks
+let modes: string[] = []
+let mode = 0
+input.onButtonPressed(Button.A, function () {
+    mode += 1
+    if (mode == 3) {
+        mode = 0
+    }
+    basic.showString(modes[mode])
+})
+input.onButtonPressed(Button.AB, function () {
+    COZIR.calibrateCo2()
+    basic.showString("+")
+    basic.pause(500)
+})
+serial.redirect(
+SerialPin.P0,
+SerialPin.P1,
+BaudRate.BaudRate9600
+)
+mode = 0
+modes = [" PPM", " C", " %RH"]
+basic.pause(500)
+basic.forever(function () {
+    basic.showString(modes[mode])
+    if (mode == 0) {
+        basic.showNumber(Math.round(COZIR.Co2()))
+    }
+    if (mode == 1) {
+        basic.showNumber(Math.round(COZIR.temperature()))
+    }
+    if (mode == 2) {
+        basic.showNumber(Math.round(COZIR.relativeHumidity()))
+    }
+})
+```
+
+## Compensation d'altitude
+Si vous habitez un endroit assez élevé en altitude, vous devrez alors l’indiquer au dispositif de capteurs en mettant un bloc * altitude * dans votre bloc *on start* et ensuite changer le nombre y apparaissant pour votre altitude au-dessus du niveau de la mer en mètres. 
+
+![image-4](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/microbit-screenshot-altitude-3a.png  "COZIR altitude block")<!-- .element width="80%"-->
+
+<!-- COZIR Sample Altitude Compensation - Embed Block-->
+```blocks
+serial.redirect(
+SerialPin.P0,
+SerialPin.P1,
+BaudRate.BaudRate9600
+)
+COZIR.Altitude(0)
+basic.pause(500)
+```
+
+## Alimentation des piles
+Une fois que votre code fonctionne, vous pouvez déconnecter l’alimentation USB et alimenter plutôt la combinaison micro:bit et dispositif de capteurs grâce au câble le connectant à une pile 9V ou un adaptateur CC. Peu importe la méthode, la tension d’alimentation doit être entre 5V et 9V. 
+
+Lorsqu’il est alimenté de cette façon, le dispositif de capteurs fournit l’alimentation au micro:bit. Mais assurez-vous de brancher les câbles de connexion aux bons endroits ou vous pourriez endommagé le micro:bit.
+
+## Supported targets
+* for PXT/microbit
+
+## Licence
+Licence MIT
+Droits d'auteur© 2018 Parlons sciences
+L'autorisation est accordée, gracieusement, à toute personne acquérant une copie de cette bibliothèque et des fichiers de documentation associés (la "Bibliothèque"), de commercialiser la Bibliothèque sans restriction, notamment les droits d'utiliser, de copier, de modifier, de fusionner, de publier, de distribuer, de sous-licencier et / ou de vendre des copies de la Bibliothèque, ainsi que d'autoriser les personnes auxquelles la Bibliothèque est fournie à le faire, sous réserve des conditions suivantes :
+
+La déclaration de copyright ci-dessus et la présente autorisation doivent être incluses dans toutes copies ou parties substantielles de la Bibliothèque.
+
+LA BIBLIOTHÈQUE EST FOURNIE "TELLE QUELLE", SANS GARANTIE D'AUCUNE SORTE, EXPLICITE OU IMPLICITE, NOTAMMENT SANS GARANTIE DE QUALITÉ MARCHANDE, D’ADÉQUATION À UN USAGE PARTICULIER ET D'ABSENCE DE CONTREFAÇON. EN AUCUN CAS, LES AUTEURS OU TITULAIRES DU DROIT D'AUTEUR NE SERONT RESPONSABLES DE TOUT DOMMAGE, RÉCLAMATION OU AUTRE RESPONSABILITÉ, QUE CE SOIT DANS LE CADRE D'UN CONTRAT, D'UN DÉLIT OU AUTRE, EN PROVENANCE DE, CONSÉCUTIF À OU EN RELATION AVEC LA BIBLIOTHÈQUE OU SON UTILISATION, OU AVEC D'AUTRES ÉLÉMENTS DE LA BIBLIOTHÈQUE.
+
+## Code de conduite
+Ce projet a adopté le Code de conduite de Microsoft (anglais)[Code de conduite de Microsoft (anglais)] (https://opensource.microsoft.com/codeofconduct/). Pour plus d'informations, voir les ) [FAQ du Code de conduite (anglais](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) avec vos questions ou commentaires.
+
 
