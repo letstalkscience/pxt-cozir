@@ -6,7 +6,7 @@
  * Date: 05-2018
  * Product info: https://www.monkmakes.com/mb_co2/
 
-### [voir en français](#french)
+#### [voir en français](#french)
  
 # COZIR sensor by Let's Talk Science | Parlons sciences
 This library provides category blocks to collect data from the custom [MonkMakes GSS COZIR printed circuit board sensor](https://www.monkmakes.com/mb_co2/). This board, designed for use with the Lets Talk Science Living Space Project, provides a CO2, temperature and Relative Humidity measurements to a BBC micro:bit.
@@ -142,7 +142,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Code of Conduct
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-### [back to top](#top)
+###### [back to top](#top)
 
 
 
@@ -282,4 +282,4 @@ LA BIBLIOTHÈQUE EST FOURNIE "TELLE QUELLE", SANS GARANTIE D'AUCUNE SORTE, EXPLI
 ## Code de conduite
 Ce projet a adopté le Code de conduite de Microsoft (anglais)[Code de conduite de Microsoft (anglais)] (https://opensource.microsoft.com/codeofconduct/). Pour plus d'informations, voir les ) [FAQ du Code de conduite (anglais](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) avec vos questions ou commentaires.
 
-### [haut de la page](#top)
+###### [haut de la page](#top)
