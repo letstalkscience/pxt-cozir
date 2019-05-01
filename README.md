@@ -4,8 +4,8 @@
  * Translation: Mylene Gamache-Tremblay @ http://parlonssciences.ca
  * Date: 05-2018
  * Product info: https://www.monkmakes.com/mb_co2/
- 
-### [VIEW THE CONTENT BELOW IN FRENCH](#FrenchContent)
+<div style="text-align: right">### <a id="top"></a> top ###</div>
+### [voir en français](#français)
  
 # COZIR sensor by Let's Talk Science | Parlons sciences
 This library provides category blocks to collect data from the custom [MonkMakes GSS COZIR printed circuit board sensor](https://www.monkmakes.com/mb_co2/). This board, designed for use with the Lets Talk Science Living Space Project, provides a CO2, temperature and Relative Humidity measurements to a BBC micro:bit.
@@ -142,10 +142,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 
+<div style="text-align: right">### [top](#top) </div>
 
 
-
-### <a id="FrenchContent"></a>Contenu français ###
+### <a id="français"></a> français ###
 
 # Dispositif de capteurs COZIR par Parlons sciences | Let's talk Science
 Cette bibliothèque fournit des blocs de catégorie pour collecter les données du  dispositif de capteurs personnalisé [MonkMakes GSS COZIR printed circuit board sensor](https://www.monkmakes.com/mb_co2/). Cette carte conçue pour l'utilisation lors du projet d'action Espace vivant de Parlons sciences transmet les mesures de dioxyde de carbone, température et humidité relative à un micro:bit BBC.
