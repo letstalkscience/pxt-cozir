@@ -1,11 +1,10 @@
+### <a id="top"></a> ###
 # pxt-cozir
  * Author: Simon Monk @ https://www.monkmakes.com
  * Co-Author: Jennifer Ferguson @ http://letstalkscience.ca
  * Translation: Mylene Gamache-Tremblay @ http://parlonssciences.ca
  * Date: 05-2018
  * Product info: https://www.monkmakes.com/mb_co2/
- 
-### <a id="top"></a> ###
 
 ### [voir en français](#french)
  
