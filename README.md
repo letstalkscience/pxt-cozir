@@ -4,7 +4,7 @@
  * Translation: Mylene Gamache-Tremblay @ http://parlonssciences.ca
  * Date: 05-2018
  * Product info: https://www.monkmakes.com/mb_co2/
-
+### <a id="top"></a>  ###
 ### [voir en français](#french)
  
 # COZIR sensor by Let's Talk Science | Parlons sciences
@@ -141,7 +141,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Code of Conduct
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-### [top](#top)###<!-- .element align="right"-->
+### [back to top](#top)
+
 
 
 ### <a id="french"></a> français ###
