@@ -146,8 +146,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 
 
-### <a id="french"></a> français ###
-
+### <a id="french"></a> ###
 # Dispositif de capteurs COZIR par Parlons sciences | Let's talk Science
 Cette bibliothèque fournit des blocs de catégorie pour collecter les données du  dispositif de capteurs personnalisé [MonkMakes GSS COZIR printed circuit board sensor](https://www.monkmakes.com/mb_co2/). Cette carte conçue pour l'utilisation lors du projet d'action Espace vivant de Parlons sciences transmet les mesures de dioxyde de carbone, température et humidité relative à un micro:bit BBC.
 
