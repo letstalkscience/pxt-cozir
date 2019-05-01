@@ -154,7 +154,7 @@ Vous devrez connecter votre dispositif COZIR au microbit comme illustré ci-dess
 
 ![image-1](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/CO2_for_m_b_connected.png "Connexions micro:bit COZIR")<!-- .element width="80%"-->
 
-Ensuite, transférez le programme suivant sur votre micro:bit en cliquant sur l’image pour ouvrir l’éditeur de blocs, puis cliquez sur Télécharger *(bottom of the web page) * et copiez le fichier hex sur votre micro:bit.
+Ensuite, transférez le programme suivant sur votre micro:bit.
 
 <!-- COZIR MakeCode Simple Program - Embed Blocks-->
 ```blocks
@@ -193,7 +193,7 @@ Votre dispositif de capteurs est un instrument scientifique sensible et les lect
 Vous pouvez également forcer l’étalonnage à l’aide du bloc Calibration CO2 dans la catégorie de blocs Let’s Talk Science ! / Parlons sciences ! Celui-ci redéfinira les lectures du dispositif de capteurs à 400 PPM. Vous devriez donc exécuter ce bloc que lorsque le dispositif de capteurs a été à l’air frais pendant 30 minutes ou plus.
 
 ###  Exemple de programme d'étalonnage 
-Connectez le dispositif de capteurs à votre micro:bit, comme illustré précédemment. Transférez ensuite le programme suivant sur votre micro:bit en cliquant sur l’image pour ouvrir l’éditeur de blocs, puis cliquez sur Télécharger *(bottom of the web page) * et copiez le fichier hex sur votre micro:bit.
+Connectez le dispositif de capteurs à votre micro:bit, comme illustré précédemment. Transférez ensuite le programme suivant sur votre micro:bit.
 
 <!-- COZIR Sample Calibration Program - Embed Blocks-->
 ```blocks
