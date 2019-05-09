@@ -25,7 +25,6 @@ You will need to connect your COZIR sensor to the microbit as shown below.
 
 Then flash the following program onto your micro:bit.
 
-<!-- COZIR MakeCode Simple Program - Embed Blocks-->
 ```blocks
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(Math.round(COZIR.Co2()))
@@ -64,7 +63,6 @@ You can also force calibration using the Calibrate CO2 block in the Let's Talk S
 ### Sample Calibration Program
 Wire-up the board to your micro:bit as shown previously. Then flash the following program onto your micro:bit.
 
-<!-- COZIR Sample Calibration Program - Embed Blocks-->
 ```blocks
 let modes: string[] = []
 let mode = 0
@@ -105,7 +103,6 @@ basic.forever(function () {
 ## Altitude Compensation
 If you live somewhere high up, then you need to tell the sensor about this by putting an *altitude* block into your *on start* block and then changing its number to your altitude above sea-level in meters.
 
-<!-- COZIR Sample Altitude Compensation - Embed Block-->
 ```blocks
 serial.redirect(
 SerialPin.P0,
@@ -156,7 +153,6 @@ Vous devrez connecter votre dispositif COZIR au microbit comme illustré ci-dess
 
 Ensuite, transférez le programme suivant sur votre micro:bit.
 
-<!-- COZIR MakeCode Simple Program - Embed Blocks-->
 ```blocks
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(Math.round(COZIR.Co2()))
@@ -195,7 +191,6 @@ Vous pouvez également forcer l’étalonnage à l’aide du bloc Calibration CO
 ###  Exemple de programme d'étalonnage 
 Connectez le dispositif de capteurs à votre micro:bit, comme illustré précédemment. Transférez ensuite le programme suivant sur votre micro:bit.
 
-<!-- COZIR Sample Calibration Program - Embed Blocks-->
 ```blocks
 let modes: string[] = []
 let mode = 0
@@ -236,7 +231,6 @@ basic.forever(function () {
 ## Compensation d'altitude
 Si vous habitez un endroit assez élevé en altitude, vous devrez alors l’indiquer au dispositif de capteurs en mettant un bloc * altitude * dans votre bloc *on start* et ensuite changer le nombre y apparaissant pour votre altitude au-dessus du niveau de la mer en mètres. 
 
-<!-- COZIR Sample Altitude Compensation - Embed Block-->
 ```blocks
 serial.redirect(
 SerialPin.P0,
