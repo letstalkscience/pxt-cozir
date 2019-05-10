@@ -21,7 +21,8 @@ For more information about this project, visit our website:
 ## Getting Started
 You will need to connect your COZIR sensor to the microbit as shown below.
 
-![image-1](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/CO2_for_m_b_connected.png "micro:bit COZIR connections")<!-- .element width="80%"-->
+![image-1](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/CO2_for_m_b_connected.png "micro:bit COZIR connections")
+
 
 Then flash the following program onto your micro:bit.
 
@@ -45,7 +46,6 @@ BaudRate.BaudRate9600
 )
 basic.pause(500)
 ```
-
 Once the program is uploaded, pressing **button A** will display the CO2 level in parts per million of CO2. Pressing **button B** will display the temperature in degrees C and **both A+B buttons** together will show the relative humidity.
 
 If you are wondering about the big **serial redirect to** block in the **on start** block, well this block starts serial transfer of data between the micro:bit and the CO2 sensor.
@@ -149,7 +149,7 @@ Pour plus d'information sur ce projet, visitez notre site web :
 ## Où débuter
 Vous devrez connecter votre dispositif COZIR au microbit comme illustré ci-dessous.
 
-![image-1](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/CO2_for_m_b_connected.png "Connexions micro:bit COZIR")<!-- .element width="80%"-->
+![image-1](https://raw.githubusercontent.com/letstalkscience/pxt-cozir/master/images/CO2_for_m_b_connected.png "Connexions micro:bit COZIR")
 
 Ensuite, transférez le programme suivant sur votre micro:bit.
 
