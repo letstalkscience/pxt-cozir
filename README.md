@@ -1,4 +1,4 @@
-### <a id="top">...</a> ###
+###top
 # pxt-cozir
  * Author: Simon Monk @ https://www.monkmakes.com
  * Co-Author: Jennifer Ferguson @ http://letstalkscience.ca
