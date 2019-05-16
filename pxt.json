@@ -1,6 +1,6 @@
 {
     "name": "cozir",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "makecode lts cozir sensor package",
     "license": "MIT",
     "dependencies": {
