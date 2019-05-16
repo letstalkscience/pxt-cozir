@@ -9,8 +9,8 @@
     "files": [
         "README.md",
         "cozir.ts",
-        "_locales/fr/cozir-jsdoc-strings.json",
-        "_locales/fr/cozir-strings.json"
+        "_locales/fr/cozir-strings.json",
+        "_locales/fr/cozir-jsdoc-strings.json"
     ],
     "public": true
 }
