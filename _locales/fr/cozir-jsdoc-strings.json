@@ -1,0 +1,9 @@
+{
+    "COZIR.Co2": "Fournit la concentration de CO2 en parties par million (PPM).",
+    "COZIR.calibrateCo2": "Exécutez cette fonction en plein-air et le module s'étalonnera lui-même\nen considérant un niveau de CO2 de 400PPM.",
+    "COZIR.relativeHumidity": "Fournit l'humidité relative en pourcentage.",
+    "COZIR.Altitude": "Compensation pour l'altitude, spécifiez votre altitude en mètres",
+    "COZIR.Altitude|param|metres": "altitude en mètres.",
+    "COZIR.setupCozir": "Paramétrer le module COZIR - utilisé seulement en usine\nceci établit le mode 'requête' du COZIR.",
+    "COZIR.temperature": "Fournit la température en degrés Celsius."
+  }

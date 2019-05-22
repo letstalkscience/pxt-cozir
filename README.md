@@ -1,4 +1,4 @@
-# pxt-cozir
+# [pxt-cozir](https://makecode.microbit.org/pkg/letstalkscience/pxt-cozir)
  * Author: Simon Monk @ https://www.monkmakes.com
  * Co-Author: Jennifer Ferguson @ http://letstalkscience.ca
  * Translation: Mylene Gamache-Tremblay @ http://parlonssciences.ca
